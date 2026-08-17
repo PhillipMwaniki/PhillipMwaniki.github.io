@@ -1,1005 +1,855 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 
-    <head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!--Meta Tags-->
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="vcard, resume, personal, portfolio, cv, card, responsive" />
-        <meta name="keywords" content="vcard, resume, personal, portfolio, cv, card, responsive" />
-        <meta name="author" content="cosmos-themes" />
+    <title>Phillip Mwaniki — Head of Engineering &amp; Backend Engineer</title>
+    <meta name="description"
+        content="Phillip Mwaniki is an IT consultant, systems integrator and backend software engineer in Nairobi, Kenya. Building high-performance APIs and system architecture with PHP (Laravel) since 2011. Creator of Table X, an open-source cross-platform SQL client.">
+    <meta name="author" content="Phillip Mwaniki">
+    <link rel="canonical" href="https://phillipmwaniki.github.io/">
 
-        <!--Page Title-->
-        <title>Clarks - vCard / Resume / Portfolio / CV Template</title>
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Phillip Mwaniki — Head of Engineering &amp; Backend Engineer">
+    <meta property="og:description"
+        content="IT consultant, systems integrator and backend engineer. High-performance APIs and system architecture with PHP (Laravel) since 2011.">
+    <meta property="og:url" content="https://phillipmwaniki.github.io/">
+    <meta property="og:image" content="https://phillipmwaniki.github.io/img/profile.jpg">
+    <meta property="og:locale" content="en_KE">
+    <meta name="twitter:card" content="summary_large_image">
 
-        <!--Plugins Css-->
-        <link rel="stylesheet" type="text/css" href="css/plugins.css" />
-        <!--Main Styles Css-->
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <!--Color Css-->
-        <link rel="stylesheet" type="text/css" href="css/blue-color.css" />
+    <meta name="theme-color" content="#08090c" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
 
-        <!--Modernizr Js-->
-        <script src="js/modernizr.js"></script>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="img/favicon.ico">
 
-        <!--Favicons-->
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
-    </head>
+    <link rel="stylesheet" href="css/style.css">
 
-    <body>
+    <script>
+        // Applied before first paint so the chosen theme never flashes.
+        (function () {
+            var t = localStorage.getItem('theme');
+            if (t) document.documentElement.setAttribute('data-theme', t);
+        })();
+    </script>
+</head>
 
-        <!--Preloader Start-->
-        <div class="preloader">
-            <div class="loading-text">
-                <span class="loading-text-words" data-preloader="L">L</span>
-                <span class="loading-text-words" data-preloader="O">O</span>
-                <span class="loading-text-words" data-preloader="A">A</span>
-                <span class="loading-text-words" data-preloader="D">D</span>
-                <span class="loading-text-words" data-preloader="I">I</span>
-                <span class="loading-text-words" data-preloader="N">N</span>
-                <span class="loading-text-words" data-preloader="G">G</span>
-            </div>
-        </div>
-        <!--Preloader End-->
+<body>
 
-        <!-- Header Start -->
-        <header>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-            <!-- logo -->
-            <a class="logo" href="#"><span>PMN</span></a>
+    <header class="site-header" id="top">
+        <div class="wrap header-inner">
+            <a class="brand" href="#top" aria-label="Phillip Mwaniki — home">
+                <span class="brand-mark" aria-hidden="true">PM</span>
+                <span class="brand-name">Phillip Mwaniki</span>
+            </a>
 
-            <!-- navigation button -->
-            <div class="menu-button">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <!-- navigation menu -->
-            <nav class="nav-menu">
-                <div class="nav-menu--links">
-                    <a class="nav-menu--link link--active" href="#home"><i class="fas fa-home"></i><span>Home</span></a>
-                    <a class="nav-menu--link" href="#about"><i class="fas fa-user"></i><span>About</span></a>
-                    <a class="nav-menu--link" href="#resume"><i class="fas fa-address-card"></i><span>Resume</span></a>
-                    <a class="nav-menu--link" href="#portfolio"><i class="fas fa-briefcase"></i><span>Portfolio</span></a>
-                    <a class="nav-menu--link" href="#blog"><i class="fas fa-book"></i><span>Blog</span></a>
-                    <a class="nav-menu--link" href="#contact"><i class="fas fa-envelope"></i><span>Contact</span></a>
-                </div>
-
-                <!-- social links -->
-                <div class="social-links">
-                    <a class="social-link" href="https://twitter.com/phillipmwaniki">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a class="social-link" href="https://www.facebook.com/phillipmwaniki/">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a class="social-link" href="https://www.linkedin.com/in/pmwaniki/">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a class="social-link" href="https://www.youtube.com/channel/UCoQL4NoaTs9Oz3l3TWTQSeg">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </div>
-
-                <!-- copyright text -->
-                <div class="copy">
-                    <p>Copyright &copy; 2019 Phillip Mwaniki, All rights Reserved.</p>
-                </div>
-
+            <nav class="nav" id="nav" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#open-source">Open&nbsp;source</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
             </nav>
 
-        </header>
-        <!-- Header End -->
-
-
-        <!-- Pages Stack Start -->
-        <div id="main" class="pages-stack">
-
-            <!--Banner Page Start-->
-            <section id="home"  class="page section-home" style="background-image: url('img/background/bg-img.jpg');">
-                <div class="banner-text">
-                    <div class="profile-img">
-                        <img src="img/profile-img.jpg" alt="person-image">
-                    </div>
-
-                    <h4>Phillip Mwaniki</h4>
-
-                    <div class="text-slideshow" data-effect="fx3">
-                        <div class="text-slide text-slide--current"><h2 class="animate-title">Web Developer</h2></div>
-                        <div class="text-slide"><h2 class="animate-title">Software Architect</h2></div>
-                        <div class="text-slide"><h2 class="animate-title">Mobile Developer</h2></div>
-                    </div>
-
-                </div>
-            </section>
-            <!--Banner Page End-->
-
-            <!--About Page Start-->
-            <section id="about" class="page section-about">
-                    <div class="container">
-
-                        <div class="page-heading">
-                            <h2 data-shadow="About">About</h2>
-                        </div>
-
-                        <!--About Info Section Start-->
-                        <div class="row about-info mb-60">
-                            <div class="col-lg-5">
-
-                                <!-- about image -->
-                                <div class="about-img">
-                                    <img src="img/about-img.jpg" alt="">
-                                </div>
-
-                            </div>
-
-                            <div class="col-lg-7">
-                                <h3 class="mb-20">Web Designer & Developer</h3>
-                                <p>Hello! I’m <strong>Phillip Mwaniki</strong>. Web Developer with over 8 years of experience. Experienced with all stages of the development cycle for dynamic web projects. Having an in-depth knowledge including advanced <strong>HTML5, CSS3, JavaScript, jQuery, Angular JS</strong>. I aim to make a difference through my creative solution.</p>
-
-                                <div class="row mb-20">
-                                    <div class="col-sm-6">
-                                        <!-- about list -->
-                                        <ul class="about-list">
-                                            <li> <span class="title">Name</span> <span class="value">Phillip Mwaniki</span> </li>
-                                            <li> <span class="title">Age</span> <span class="value">29 Years</span> </li>
-                                            <li> <span class="title">Email</span> <span class="value">pmwaniki@philsoft.tech</span> </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <!-- about list -->
-                                        <ul class="about-list">
-                                            <li> <span class="title">Phone</span> <span class="value">+254725095439</span> </li>
-                                            <li> <span class="title">Address</span> <span class="value">Uthiru 87, off Waiyaki Way</span> </li>
-                                            <li> <span class="title">Freelance</span> <span class="value">Available</span> </li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <!-- resume button -->
-                                        <div class="resume-button">
-                                            <a class="main-btn" href="resume.pdf">Download CV</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!--About Info Section End-->
-
-                        <!--Services Section Start-->
-                        <div class="row services mb-20">
-                            <div class="col-md-12">
-                                <div class="sub-heading">
-                                    <h3 >Services</h3>
-                                </div>
-                            </div>
-
-                            <!--service item-->
-                            <div class="col-lg-3 col-sm-6">
-                                <div class="service-item">
-                                    <i class="icon-desktop"></i>
-                                    <h4 class="title">Web Development</h4>
-                                    <p>Elit aspernatur provident maxime culpa quo Sed quia doloremque iusto cum quidem? Amet asperiores consequatur</p>
-                                </div>
-                            </div>
-
-                            <!--service item-->
-                            <div class="col-lg-3 col-sm-6">
-                                <div class="service-item">
-                                    <i class="icon-tools"></i>
-                                    <h4 class="title">Brand Identity</h4>
-                                    <p>Elit aspernatur provident maxime culpa quo Sed quia doloremque iusto cum quidem? Amet asperiores consequatur</p>
-                                </div>
-                            </div>
-
-                            <!--service item-->
-                            <div class="col-lg-3 col-sm-6">
-                                <div class="service-item">
-                                    <i class="icon-paintbrush"></i>
-                                    <h4 class="title">Graphics Design</h4>
-                                    <p>Elit aspernatur provident maxime culpa quo Sed quia doloremque iusto cum quidem? Amet asperiores consequatur</p>
-                                </div>
-                            </div>
-
-                            <!--service item-->
-                            <div class="col-lg-3 col-sm-6">
-                                <div class="service-item">
-                                    <i class="icon-lightbulb"></i>
-                                    <h4 class="title">Support</h4>
-                                    <p>Elit aspernatur provident maxime culpa quo Sed quia doloremque iusto cum quidem? Amet asperiores consequatur</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!--Services Section End-->
-
-                        <!--Testimonials Section Start-->
-                        <div class="row testimonials mb-60">
-
-                            <div class="col-md-12">
-                                <div class="sub-heading">
-                                    <h3>Testimonials</h3>
-                                </div>
-                            </div>
-
-                            <!--testimonials list-->
-                            <div class="owl-carousel owl-theme">
-                                <!--testimonial item-->
-                                <div class="testimonial-item">
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ipsum augue, lacinia vel arcu condimentum, dictum tristique sem. Nam enim neque, mattis ut fermentum vitae, venenatis id tortor. Sed consectetur tortor ut arcu pharetra faucibus. In tristique sollicitudin mi ac congue. Praesent efficitur feugiat nisl.</p>
-                                    </div>
-                                    <div class="testimonial-review">
-                                        <img src="img/testimonials/author-1.jpg" alt="">
-                                        <h3 class="testimonial-title">
-                                            williamson
-                                            <small>Web Developer</small>
-                                        </h3>
-                                        <ul class="rating">
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star-half"></i></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <!--testimonial item-->
-                                <div class="testimonial-item">
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ipsum augue, lacinia vel arcu condimentum, dictum tristique sem. Nam enim neque, mattis ut fermentum vitae, venenatis id tortor. Sed consectetur tortor ut arcu pharetra faucibus. In tristique sollicitudin mi ac congue. Praesent efficitur feugiat nisl.</p>
-                                    </div>
-                                    <div class="testimonial-review">
-                                        <img src="img/testimonials/author-2.jpg" alt="">
-                                        <h3 class="testimonial-title">
-                                            kristiana
-                                            <small>Web Designer</small>
-                                        </h3>
-                                        <ul class="rating">
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <!--testimonial item-->
-                                <div class="testimonial-item">
-                                    <div class="description">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ipsum augue, lacinia vel arcu condimentum, dictum tristique sem. Nam enim neque, mattis ut fermentum vitae, venenatis id tortor. Sed consectetur tortor ut arcu pharetra faucibus. In tristique sollicitudin mi ac congue. Praesent efficitur feugiat nisl.</p>
-                                    </div>
-                                    <div class="testimonial-review">
-                                        <img src="img/testimonials/author-3.jpg" alt="">
-                                        <h3 class="testimonial-title">
-                                            Steve Thomas
-                                            <small>Web Developer</small>
-                                        </h3>
-                                        <ul class="rating">
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                            <li><i class="fas fa-star"></i></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!--Testimonial Section End-->
-
-                        <!--Clients Logo Section Start-->
-                        <div class="row clients mb-50">
-                            <div class="col-md-12">
-                                <div class="sub-heading">
-                                    <h3>Clients</h3>
-                                </div>
-                            </div>
-
-                            <div class="owl-carousel owl-theme">
-
-                                <!--client logo-->
-                                <div class="client-logo">
-                                    <a href="#">
-                                        <img src="img/clients/client-01.png" alt="">
-                                    </a>
-                                </div>
-
-                                <!--client logo-->
-                                <div class="client-logo">
-                                    <a href="#">
-                                        <img src="img/clients/client-02.png" alt="">
-                                    </a>
-                                </div>
-
-                                <!--client logo-->
-                                <div class="client-logo">
-                                    <a href="#">
-                                        <img src="img/clients/client-03.png" alt="">
-                                    </a>
-                                </div>
-
-                                <!--client logo-->
-                                <div class="client-logo">
-                                    <a href="#">
-                                        <img src="img/clients/client-04.png" alt="">
-                                    </a>
-                                </div>
-
-                                <!--client logo-->
-                                <div class="client-logo">
-                                    <a href="#">
-                                        <img src="img/clients/client-05.png" alt="">
-                                    </a>
-                                </div>
-
-                                <!--client logo-->
-                                <div class="client-logo">
-                                    <a href="#">
-                                        <img src="img/clients/client-06.png" alt="">
-                                    </a>
-                                </div>
-
-                                <!--client logo-->
-                                <div class="client-logo">
-                                    <a href="#">
-                                        <img src="img/clients/client-07.png" alt="">
-                                    </a>
-                                </div>
-
-                                <!--client logo-->
-                                <div class="client-logo">
-                                    <a href="#">
-                                        <img src="img/clients/client-08.png" alt="">
-                                    </a>
-                                </div>
-
-                                <!--client logo-->
-                                <div class="client-logo">
-                                    <a href="#">
-                                        <img src="img/clients/client-09.png" alt="">
-                                    </a>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <!--Clients Logo Section End-->
-
-                    </div>
-            </section>
-            <!--About Section End-->
-
-            <!--Resume Page Start-->
-            <section id="resume" class="page section-resume">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="page-heading">
-                                <h2 data-shadow="Resume">Resume</h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mb-10">
-
-                        <!--Experience Column Start-->
-                        <div class="col-lg-6">
-                            <div class="sub-heading">
-                                <h3>Experience</h3>
-                            </div>
-
-                            <!--experience timeline start-->
-                            <ul class="experience timeline">
-
-                                <!--timeline item-->
-                                <li class="event">
-                                    <h4>Lead UI Designer</h4>
-                                    <h5>
-                                        <span class="date">2017-2018</span>
-                                        <span class="company">Big Design Company, NY, USA</span>
-                                    </h5>
-                                    <p>Sit cupiditate praesentium ex esse nulla Facere fuga perspiciatis eveniet provident neque Ea ratione non minus.</p>
-                                </li>
-
-                                <!--timeline item-->
-                                <li class="event">
-                                    <h4>Web Designer</h4>
-                                    <h5>
-                                        <span class="date">2016-2017</span>
-                                        <span class="company">Design Company, London, UK</span>
-                                    </h5>
-                                    <p>Dolor id atque accusantium ut impedit odit provident soluta voluptatem Veritatis ipsam neque mollitia vero ipsa.</p>
-                                </li>
-
-                                <!--timeline item-->
-                                <li class="event">
-                                    <h4>Web Developer</h4>
-                                    <h5>
-                                        <span class="date">2015-2016</span>
-                                        <span class="company">Exis Development, London, UK</span>
-                                    </h5>
-                                    <p>Consectetur pariatur fugiat ipsam aperiam maiores. Nisi in dignissimos debitis expedita asperiores delectus.</p>
-                                </li>
-                            </ul>
-                            <!--experience timeline end-->
-
-                        </div>
-                        <!--Experience Column End-->
-
-                        <!--Education Column Start-->
-                        <div class="col-lg-6">
-                            <div class="sub-heading">
-                                <h3>Education</h3>
-                            </div>
-
-                            <!--education timeline start-->
-                            <ul class="education timeline">
-                                <!--timeline item-->
-                                <li class="event">
-                                    <h4>MA Graphics</h4>
-                                    <h5>
-                                        <span class="date">2014-2015</span>
-                                        <span class="company">Royal College Of Art, London, UK</span>
-                                    </h5>
-                                    <p>Provident veritatis exercitationem eum doloremque itaque expedita? Ex voluptatem nostrum numquam illum.</p>
-                                </li>
-
-                                <!--timeline item-->
-                                <li class="event">
-                                    <h4>Ba(hons) Graphics</h4>
-                                    <h5>
-                                        <span class="date">2013-2014</span>
-                                        <span class="company">Central Saint Martins, London, UK</span>
-                                    </h5>
-                                    <p>Elit voluptatibus quas necessitatibus ullam tenetur provident voluptatibus. Ratione delectus lorem minus ipsa.</p>
-                                </li>
-
-                                <!--timeline item-->
-                                <li class="event">
-                                    <h4>Web & Graphics Diploma</h4>
-                                    <h5>
-                                        <span class="date">2012-2013</span>
-                                        <span class="company">Tech Arts Institute, CA, USA</span>
-                                    </h5>
-                                    <p>Ipsum ex exercitationem est aliquid eos saepe. Dolorum aperiam cupiditate labore vero deleniti Aut unde deser.</p>
-                                </li>
-                            </ul>
-                            <!--education timeline end-->
-
-                        </div>
-                        <!--Education Column End-->
-                    </div>
-
-                    <!--Skills Row Start-->
-                    <div class="row">
-
-                        <!-- Design Skills Column Start -->
-                        <div class="col-lg-6 skills">
-                            <div class="sub-heading">
-                                <h3>Design Skills</h3>
-                            </div>
-
-                            <!--skill item-->
-                            <div class="skill-item">
-                                <h4 class="progress-title">Coral Draw</h4>
-
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:91%">
-                                        <div class="progress-value">91%</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--skill item-->
-                            <div class="skill-item">
-                                <h4 class="progress-title">Photoshop</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:82%">
-                                        <div class="progress-value">82%</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--skill item-->
-                            <div class="skill-item">
-                                <h4 class="progress-title">Illustrator</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:94%">
-                                        <div class="progress-value">94%</div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <!-- Design Skills Column End -->
-
-                        <!-- Coding Skills Column Start -->
-                        <div class="col-lg-6 skills">
-                            <div class="sub-heading">
-                                <h3 data-shadow="Coding Skills">Coding Skills</h3>
-                            </div>
-
-                            <!--skill item-->
-                            <div class="skill-item">
-                                <h4 class="progress-title">HTML5</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:83%">
-                                        <div class="progress-value">83%</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--skill item-->
-                            <div class="skill-item">
-                                <h4 class="progress-title">CSS3</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:75%">
-                                        <div class="progress-value">75%</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--skill item-->
-                            <div class="skill-item">
-                                <h4 class="progress-title">Javascript</h4>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width:92%">
-                                        <div class="progress-value">92%</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- Coding Skills Column End -->
-
-                    </div>
-                    <!--Skills Row End-->
-
-                </div>
-            </section>
-            <!--Resume Page End-->
-
-            <!--Portfolio Page Start-->
-            <section id="portfolio" class="page section-portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="page-heading">
-                                <h2 data-shadow="Portfolio">Portfolio</h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <!--portfolio filters-->
-                        <div class="col-md-12 portfolio-filter">
-                            <ul>
-                                <li class="active" data-filter="*">All</li>
-                                <li data-filter=".brand">Brand</li>
-                                <li data-filter=".design">Design</li>
-                                <li data-filter=".graphic">Graphic</li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    <div class="row portfolio-items mb-30">
-
-                        <!--portfolio item-->
-                        <div class="item col-lg-4 col-sm-6 graphic brand">
-                            <figure>
-                                <img src="img/portfolio/img-1.jpg" alt="">
-
-                                <figcaption>
-                                    <h3>Project Name</h3>
-                                    <p>Graphic</p>
-                                    <i class="fas fa-image"></i>
-                                    <a class="image-link" href="img/portfolio/img-1.jpg">View More</a>
-                                </figcaption>
-
-                            </figure>
-                        </div>
-
-                        <!--portfolio item-->
-                        <div class="item col-lg-4 col-sm-6 graphic brand">
-                            <figure>
-                                <img src="img/portfolio/img-2.jpg" alt="">
-
-                                <figcaption>
-                                    <h3>Project Name</h3>
-                                    <p>Design</p>
-                                    <i class="fas fa-image"></i>
-                                    <a class="image-link" href="img/portfolio/img-2.jpg">View More</a>
-                                </figcaption>
-
-                            </figure>
-                        </div>
-
-                        <!--portfolio item-->
-                        <div class="item col-lg-4 col-sm-6 design graphic">
-                            <figure>
-                                <img src="img/portfolio/img-3.jpg" alt="">
-
-                                <figcaption>
-                                    <h3>Project Name</h3>
-                                    <p>Graphic</p>
-                                    <i class="fas fa-video"></i>
-                                    <a class="video-link" href="https://www.youtube.com/watch?v=k_okcNVZqqI">View More</a>
-                                </figcaption>
-
-                            </figure>
-                        </div>
-
-                        <!--portfolio item-->
-                        <div class="item col-lg-4 col-sm-6 design graphic">
-                            <figure>
-                                <img src="img/portfolio/img-4.jpg" alt="">
-
-                                <figcaption>
-                                    <h3>Project Name</h3>
-                                    <p>Design</p>
-                                    <i class="fas fa-image"></i>
-                                    <a class="image-link" href="img/portfolio/img-4.jpg">View More</a>
-                                </figcaption>
-
-                            </figure>
-                        </div>
-
-                        <!--portfolio item-->
-                        <div class="item col-lg-4 col-sm-6 graphic">
-                            <figure>
-                                <img src="img/portfolio/img-5.jpg" alt="">
-
-                                <figcaption>
-                                    <h3>Project Name</h3>
-                                    <p>Design</p>
-                                    <i class="fas fa-video"></i>
-                                    <a class="video-link" href="https://www.youtube.com/watch?v=k_okcNVZqqI">View More</a>
-                                </figcaption>
-
-                            </figure>
-                        </div>
-
-                        <!--portfolio item-->
-                        <div class="item col-lg-4 col-sm-6 brand design">
-                            <figure>
-                                <img src="img/portfolio/img-6.jpg" alt="">
-
-                                <figcaption>
-                                    <h3>Project Name</h3>
-                                    <p>Brand</p>
-                                    <i class="fas fa-image"></i>
-                                    <a class="image-link" href="img/portfolio/img-6.jpg">View More</a>
-                                </figcaption>
-
-                            </figure>
-                        </div>
-
-                        <!--portfolio item-->
-                        <div class="item col-lg-4 col-sm-6 brand graphic">
-                            <figure>
-                                <img src="img/portfolio/img-7.jpg" alt="">
-
-                                <figcaption>
-                                    <h3>Project Name</h3>
-                                    <p>Brand</p>
-                                    <i class="fas fa-image"></i>
-                                    <a class="image-link" href="img/portfolio/img-7.jpg">View More</a>
-                                </figcaption>
-
-                            </figure>
-                        </div>
-
-                        <!--portfolio item-->
-                        <div class="item col-lg-4 col-sm-6 brand graphic">
-                            <figure>
-                                <img src="img/portfolio/img-8.jpg" alt="">
-                                <figcaption>
-                                    <h3>Project Name</h3>
-                                    <p>Brand</p>
-                                    <i class="fas fa-image"></i>
-                                    <a class="image-link" href="img/portfolio/img-8.jpg">View More</a>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <!--portfolio item-->
-                        <div class="item col-lg-4 col-sm-6 brand graphic">
-                            <figure>
-                                <img src="img/portfolio/img-9.jpg" alt="">
-                                <figcaption>
-                                    <h3>Project Name</h3>
-                                    <p>Graphic</p>
-                                    <i class="fas fa-image"></i>
-                                    <a class="image-link" href="img/portfolio/img-9.jpg">View More</a>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <!--portfolio item-->
-                        <div class="item col-lg-4 col-sm-6 brand graphic">
-                            <figure>
-                                <img src="img/portfolio/img-10.jpg" alt="">
-                                <figcaption>
-                                    <h3>Project Name</h3>
-                                    <p>Graphics Design</p>
-                                    <i class="fas fa-video"></i>
-                                    <a class="video-link" href="https://www.youtube.com/watch?v=k_okcNVZqqI">View More</a>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                        <!--portfolio item-->
-                        <div class="item col-lg-4 col-sm-6 brand graphic">
-                            <figure>
-                                <img src="img/portfolio/img-11.jpg" alt="">
-                                <figcaption>
-                                    <h3>Project Name</h3>
-                                    <p>Graphic</p>
-                                    <i class="fas fa-image"></i>
-                                    <a class="image-link" href="img/portfolio/img-11.jpg">View More</a>
-                                </figcaption>
-                            </figure>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            <!--Portfolio Page End-->
-
-            <!--Blog Page Start-->
-            <section id="blog" class="page section-blog">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="page-heading">
-                                <h2 data-shadow="Blogs">Blogs</h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row blogs-container">
-
-                        <div class="col-lg-4 col-md-6">
-                            <!--blog item-->
-                            <a class="blog-item" href="single-blog.html">
-
-                                <div class="post-img">
-                                    <img src="img/blogs/img-1.jpg" alt="">
-                                </div>
-
-                                <div class="post-content">
-                                    <span class="cat">Travel</span>
-                                    <h3 class="title">Explore the Pacific Northwest</h3>
-                                    <div class="meta">
-                                        <span class="date">Posted On March 8, 2015</span>
-                                    </div>
-                                </div>
-                            </a>
-
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <!--blog item-->
-                            <a class="blog-item" href="single-blog.html">
-
-                                <div class="post-img">
-                                    <img src="img/blogs/img-2.jpg" alt="">
-                                </div>
-
-                                <div class="post-content">
-
-                                    <span class="cat">Travel</span>
-                                    <h3 class="title">Explore the Pacific Northwest</h3>
-                                    <div class="meta">
-                                        <span class="date">Posted On March 8, 2015</span>
-                                    </div>
-
-                                </div>
-                            </a>
-
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <!--blog item-->
-                            <a class="blog-item" href="single-blog.html">
-
-                                <div class="post-img">
-                                    <img src="img/blogs/img-3.jpg" alt="">
-                                </div>
-
-                                <div class="post-content">
-
-                                    <span class="cat">Travel</span>
-                                    <h3 class="title">Explore the Pacific Northwest</h3>
-                                    <div class="meta">
-                                        <span class="date">Posted On March 8, 2015</span>
-                                    </div>
-
-                                </div>
-                            </a>
-
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <!--blog item-->
-                            <a class="blog-item" href="single-blog.html">
-
-                                <div class="post-img">
-                                    <img src="img/blogs/img-4.jpg" alt="">
-                                </div>
-
-                                <div class="post-content">
-
-                                    <span class="cat">Travel</span>
-                                    <h3 class="title">Explore the Pacific Northwest</h3>
-                                    <div class="meta">
-                                        <span class="date">Posted On March 8, 2015</span>
-                                    </div>
-
-                                </div>
-                            </a>
-
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <!--blog item-->
-                            <a class="blog-item" href="single-blog.html">
-
-                                <div class="post-img">
-                                    <img src="img/blogs/img-5.jpg" alt="">
-                                </div>
-
-                                <div class="post-content">
-
-                                    <span class="cat">Travel</span>
-                                    <h3 class="title">Explore the Pacific Northwest</h3>
-                                    <div class="meta">
-                                        <span class="date">Posted On March 8, 2015</span>
-                                    </div>
-
-                                </div>
-                            </a>
-
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <!--blog item-->
-                            <a class="blog-item" href="single-blog.html">
-
-                                <div class="post-img">
-                                    <img src="img/blogs/img-6.jpg" alt="">
-                                </div>
-
-                                <div class="post-content">
-
-                                    <span class="cat">Travel</span>
-                                    <h3 class="title">Explore the Pacific Northwest</h3>
-                                    <div class="meta">
-                                        <span class="date">Posted On March 8, 2015</span>
-                                    </div>
-
-                                </div>
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </section>
-            <!--Blog Page End-->
-
-            <!--Contact Page Start-->
-            <section id="contact"  class="page section-contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="page-heading">
-                                <h2 data-shadow="Contact">Contact</h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <!--Contact Information Column Start-->
-                        <div class="col-lg-6 contact-detail">
-                            <div class="sub-heading mb-20">
-                                <h3>Get In Touch</h3>
-                            </div>
-                            <p>For more information on any of our services or to talk about how we may be able to help you, please get in touch with us using the form opposite. Or you can call and follow our social media.</p>
-                            <ul class="contact-info">
-                                <li class="phone">
-                                    <span class="title">Phone</span><span class="value">(+12) 012 456 7890</span>
-                                </li>
-                                <li class="address">
-                                    <span class="title">Address</span><span class="value">01, Lorem Ipsum Road, NY, USA</span>
-                                </li>
-                                <li class="email">
-                                    <span class="title">E-mail</span><span class="value">example@example.com</span>
-                                </li>
-                            </ul>
-
-                            <!--social media icons-->
-                            <div class="social-media">
-                                <h4>Follow</h4>
-                                <div class="social-media-icons">
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-dribbble"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Contact Information Column End-->
-
-
-                        <!--Contact Form Column Start-->
-                        <div class="col-lg-6">
-                            <form id="contact-form" method="post" action="mail.php">
-                                <!--input field-->
-                                <div class="input">
-                                    <input class="input-field cf-validate" id="cf-name" type="text" name="name" placeholder="Your Name"/>
-                                </div>
-
-                                <!--input field-->
-                                <div class="input">
-                                    <input class="input-field cf-validate" id="cf-email" type="text" name="email" placeholder="Your Email"/>
-                                </div>
-
-                                <!--input field-->
-                                <div class="input">
-                                    <textarea class="input-field cf-validate" id="cf-message" name="message" rows="5" placeholder="Message"></textarea>
-                                </div>
-
-                                <div class="alert-container col-md-12"></div>
-
-                                <!--submit button-->
-                                <div class="submit-button text-center">
-                                    <button class="main-btn" id="cf-submit">Send Message</button>
-                                </div>
-
-                            </form>
-                        </div>
-                        <!--Contact Form Column End-->
-
-                    </div>
-
-                    <!--Google Map Row Start-->
-                    <div class="row">
-                        <div class="col-md-12 google-map">
-                            <div id="map" data-latitude="-37.817214" data-longitude="144.955925" data-zoom="15"></div>
-                        </div>
-                    </div>
-                    <!--Google Map Row End-->
-
-                </div>
-            </section>
-            <!--Contact Page End-->
-
+            <div class="header-actions">
+                <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch colour theme">
+                    <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4.2" />
+                        <path
+                            d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.9 4.9l1.9 1.9M17.2 17.2l1.9 1.9M19.1 4.9l-1.9 1.9M6.8 17.2l-1.9 1.9" />
+                    </svg>
+                    <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20 14.2A8.4 8.4 0 0 1 9.8 4a8.4 8.4 0 1 0 10.2 10.2Z" />
+                    </svg>
+                </button>
+
+                <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Menu" aria-expanded="false"
+                    aria-controls="nav">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3.5 7h17M3.5 12h17M3.5 17h17" />
+                    </svg>
+                </button>
+            </div>
         </div>
-        <!-- /pages-stack -->
+    </header>
 
-        <!--Jquery JS-->
-        <script src="js/jquery.min.js"></script>
-        <!--Plugins JS-->
-        <script src="js/plugins.min.js"></script>
-        <!--Google Map Api-->
-        <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
-        <!--Site Main JS-->
-        <script src="js/main.js"></script>
+    <main id="main">
 
-    </body>
+        <!-- ───────────────────────────── Hero ───────────────────────────── -->
+        <section class="hero">
+            <div class="wrap">
+
+                <p class="eyebrow">
+                    <span class="pin" aria-hidden="true"></span>
+                    Nairobi County, Kenya
+                    <span class="eyebrow-sep" aria-hidden="true">/</span>
+                    Available for consulting
+                </p>
+
+                <h1 class="hero-title">
+                    <span class="line">Phillip</span>
+                    <span class="line line-2">Mwaniki</span>
+                </h1>
+
+                <div class="hero-grid">
+
+                    <div class="hero-copy">
+                        <p class="hero-role">
+                            IT&nbsp;Consultant <span class="dot" aria-hidden="true"></span>
+                            Systems&nbsp;Integrator <span class="dot" aria-hidden="true"></span>
+                            <em>Backend&nbsp;Engineer</em>
+                        </p>
+
+                        <p class="hero-lede">
+                            I have been building web software since 2011, with a strong focus on the
+                            backend using <strong>PHP&nbsp;(Laravel)</strong>. Today I lead engineering at
+                            Wonderkid Multimedia — and spend my nights writing
+                            <a href="#open-source">Table&nbsp;X</a> in Rust.
+                        </p>
+
+                        <div class="hero-cta">
+                            <a class="btn btn-primary" href="#contact">Get in touch</a>
+                            <a class="btn" href="#experience">See the work</a>
+                        </div>
+
+                        <ul class="hero-links">
+                            <li>
+                                <a href="https://www.linkedin.com/in/pmwaniki" rel="me noopener" target="_blank">
+                                    LinkedIn <span aria-hidden="true">↗</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/PhillipMwaniki" rel="me noopener" target="_blank">
+                                    GitHub <span aria-hidden="true">↗</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/phillipmwaniki" rel="me noopener" target="_blank">
+                                    X <span aria-hidden="true">↗</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <figure class="portrait">
+                        <picture>
+                            <source srcset="img/profile.webp" type="image/webp">
+                            <img src="img/profile.jpg" alt="Phillip Mwaniki" width="1000" height="1250"
+                                fetchpriority="high">
+                        </picture>
+                    </figure>
+
+                </div>
+
+                <ul class="hero-stats">
+                    <li>
+                        <span class="stat-num">15<span class="plus">+</span></span>
+                        <span class="stat-label">Years shipping software</span>
+                    </li>
+                    <li>
+                        <span class="stat-num">5</span>
+                        <span class="stat-label">Countries worked across</span>
+                    </li>
+                    <li>
+                        <span class="stat-num">13</span>
+                        <span class="stat-label">Companies &amp; clients</span>
+                    </li>
+                    <li>
+                        <span class="stat-num">1</span>
+                        <span class="stat-label">Open-source SQL client</span>
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- ──────────────────────────── About ──────────────────────────── -->
+        <section class="section" id="about">
+            <div class="wrap">
+                <p class="section-label">01 <span aria-hidden="true">—</span> About</p>
+
+                <div class="about-grid">
+                    <h2 class="section-title">
+                        Technology as leverage, for systems that serve&nbsp;people.
+                    </h2>
+
+                    <div class="about-body">
+                        <p class="lead">
+                            My mission is to use technology to bring structure, efficiency and fairness
+                            to systems that serve people — especially where those systems are broken or
+                            neglected — and to pass on that knowledge, so others can build too.
+                        </p>
+                        <p>
+                            That has meant a lot of different rooms over fifteen years: refactoring a
+                            crypto wallet for a New York studio, integrating ad platforms for an analytics
+                            product in Vilnius, scraping constitutions for a legal-tech team in the UK,
+                            leading a hospital system migration in Nairobi. The through-line is the same —
+                            take something tangled, give it a clean architecture, and leave the team
+                            better equipped than I found them.
+                        </p>
+                        <p>
+                            Today I am Head of Engineering at Wonderkid Multimedia, building ERP for the
+                            water sector and rethinking how water gets delivered by bowser.
+                        </p>
+
+                        <dl class="facts">
+                            <div>
+                                <dt>Focus</dt>
+                                <dd>High-performance APIs, system architecture</dd>
+                            </div>
+                            <div>
+                                <dt>Primary stack</dt>
+                                <dd>PHP (Laravel), MySQL, Vue</dd>
+                            </div>
+                            <div>
+                                <dt>Also</dt>
+                                <dd>Engineering &amp; executive-level management</dd>
+                            </div>
+                            <div>
+                                <dt>Languages</dt>
+                                <dd>English</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ────────────────────────── Experience ────────────────────────── -->
+        <section class="section section-alt" id="experience">
+            <div class="wrap">
+                <p class="section-label">02 <span aria-hidden="true">—</span> Experience</p>
+                <h2 class="section-title">Fifteen years,<br>thirteen companies.</h2>
+
+                <ol class="timeline">
+
+                    <li class="job">
+                        <div class="job-meta">
+                            <p class="job-date">Apr 2022 — Present</p>
+                            <p class="job-place">Nairobi, Kenya</p>
+                        </div>
+                        <div class="job-body">
+                            <h3 class="job-company">Wonderkid Multimedia <span class="badge">Current</span></h3>
+
+                            <div class="role">
+                                <h4 class="role-title">Head of Engineering</h4>
+                                <p class="role-date">Jan 2025 — Present</p>
+                                <ul>
+                                    <li>Building an ERP platform for the water sector.</li>
+                                    <li>Redefining water delivery via bowsers.</li>
+                                </ul>
+                            </div>
+
+                            <div class="role">
+                                <h4 class="role-title">Senior Software Engineering Consultant</h4>
+                                <p class="role-date">Apr 2022 — Dec 2024</p>
+                                <ul>
+                                    <li>Developed applications using PHP.</li>
+                                    <li>Shipped updates to mobile apps using Java for Android.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="job">
+                        <div class="job-meta">
+                            <p class="job-date">Jun 2011 — Jun 2025</p>
+                            <p class="job-place">Nairobi, Kenya</p>
+                        </div>
+                        <div class="job-body">
+                            <h3 class="job-company">Philsoft Limited</h3>
+
+                            <div class="role">
+                                <h4 class="role-title">Senior Software Consultant</h4>
+                                <p class="role-date">May 2019 — Jun 2025</p>
+                                <ul>
+                                    <li>Built bespoke solutions for clients.</li>
+                                    <li>Helped teams migrate to a modern development workflow — Git, unit and
+                                        feature testing, and CI/CD in their engineering pipeline.</li>
+                                </ul>
+                            </div>
+
+                            <div class="role">
+                                <h4 class="role-title">Software Engineer</h4>
+                                <p class="role-date">Jun 2011 — Jun 2019</p>
+                                <p class="stack">Laravel · MySQL · Android (Java) · CentOS</p>
+                                <ul>
+                                    <li>Ran a consultancy practice delivering IT solutions and cloud-based
+                                        products for clients.</li>
+                                    <li>Advised clients on technology integration, long-term benefit evaluation,
+                                        and IT equipment procurement.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="job">
+                        <div class="job-meta">
+                            <p class="job-date">Sep 2022 — May 2023</p>
+                            <p class="job-place">Nairobi, Kenya</p>
+                        </div>
+                        <div class="job-body">
+                            <h3 class="job-company">Maat Systems East Africa</h3>
+                            <div class="role">
+                                <h4 class="role-title">Senior Software Engineer</h4>
+                                <ul>
+                                    <li>Led a team of 4 developers migrating an existing hospital system to
+                                        Laravel with an MVC architecture, improving application performance by
+                                        over <strong>30%</strong>.</li>
+                                    <li>Supported the server infrastructure and handled deployments via CI/CD.</li>
+                                    <li>Liaised with clients on documenting bugs and building features.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="job">
+                        <div class="job-meta">
+                            <p class="job-date">May 2022 — Aug 2022</p>
+                            <p class="job-place">Durban, South Africa</p>
+                        </div>
+                        <div class="job-body">
+                            <h3 class="job-company">Advantage Learning Technologies</h3>
+                            <div class="role">
+                                <h4 class="role-title">Senior Software Engineer</h4>
+                                <p class="stack">Laravel · MySQL · Redis · Vue 3 · TypeScript · Spring Boot · Angular
+                                </p>
+                                <ul>
+                                    <li>One of 4 developers enhancing an online Learning Management System.</li>
+                                    <li>Spearheaded the initial project structure enabling a seamless migration
+                                        from webpack to Vite and then to Laravel 9, future-proofing the platform.</li>
+                                    <li>Created design documents and implemented modules alongside the team.</li>
+                                    <li>Maintained a legacy system for startup hubs in South Africa — new features,
+                                        debugging, and deployments to test and production on Spring Boot and
+                                        Angular.</li>
+                                    <li>Ensured server uptime and ran production issue monitoring.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="job">
+                        <div class="job-meta">
+                            <p class="job-date">Oct 2021 — Apr 2022</p>
+                            <p class="job-place">Vilnius, Lithuania</p>
+                        </div>
+                        <div class="job-body">
+                            <h3 class="job-company">Whatagraph</h3>
+                            <div class="role">
+                                <h4 class="role-title">Backend Software Engineer</h4>
+                                <p class="stack">Laravel · MySQL</p>
+                                <ul>
+                                    <li>Integrated Twitter and Twitter Ads into the platform, cutting report bugs
+                                        by <strong>50%</strong> and improving data-analytics quality for clients.</li>
+                                    <li>Managed client technical support tickets, ensuring seamless integration of
+                                        their data sources.</li>
+                                    <li>Improved in-house documentation on internal framework tooling and
+                                        processes.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="job">
+                        <div class="job-meta">
+                            <p class="job-date">Jan 2021 — Oct 2021</p>
+                            <p class="job-place">United Kingdom</p>
+                        </div>
+                        <div class="job-body">
+                            <h3 class="job-company">Libryo</h3>
+                            <div class="role">
+                                <h4 class="role-title">Full Stack Engineer</h4>
+                                <p class="stack">Laravel 7 · Vue.js · MySQL · GitLab · TypeScript · Playwright</p>
+                                <ul>
+                                    <li>Enhanced the core legal management system alongside a team of 10
+                                        developers.</li>
+                                    <li>Facilitated feature requests from the legal team, resulting in a friendlier
+                                        application.</li>
+                                    <li>Implemented an internal scraping tool with TypeScript and Microsoft
+                                        Playwright to extract constitutions and legislation.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="job">
+                        <div class="job-meta">
+                            <p class="job-date">Apr 2020 — Dec 2020</p>
+                            <p class="job-place">Nairobi, Kenya</p>
+                        </div>
+                        <div class="job-body">
+                            <h3 class="job-company">Ally Innovations</h3>
+                            <div class="role">
+                                <h4 class="role-title">Product Manager</h4>
+                                <p class="stack">Flutter · Elixir · PostgreSQL · Jira · Bitbucket · Asana</p>
+                                <ul>
+                                    <li>Guided a team of 5 to deliver an MVP within a 3-month deadline, securing a
+                                        further round of investment.</li>
+                                    <li>Presented to investors and pitched growth strategies for the company.</li>
+                                    <li>Facilitated strategy meetings, prioritising features and bugs for delivery.</li>
+                                    <li>Built the Storiez mobile app using Elixir and PostgreSQL.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="job is-early" hidden>
+                        <div class="job-meta">
+                            <p class="job-date">Jul 2018 — Mar 2020</p>
+                            <p class="job-place">New York, United States</p>
+                        </div>
+                        <div class="job-body">
+                            <h3 class="job-company">Mattermark Studios <span class="badge badge-quiet">Acquired</span>
+                            </h3>
+                            <div class="role">
+                                <h4 class="role-title">Senior Software Engineer</h4>
+                                <p class="stack">C++ · Node.js · PHP (Zend, WordPress) · MySQL · FileMaker · Blockchain
+                                </p>
+                                <ul>
+                                    <li>Spearheaded the refactor of the bitcoin wallet, extending it to support
+                                        multiple cryptocurrencies with Node.js for the Accubitz Wallet product.</li>
+                                    <li>Built internal tooling to manage ICOs, and wrote the API as main developer
+                                        for the mobile app and Bitsector, using PHP for the Coins.live product.</li>
+                                    <li>Built the AET Core product on Zend Framework.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="job is-early" hidden>
+                        <div class="job-meta">
+                            <p class="job-date">Dec 2016 — Jul 2018</p>
+                            <p class="job-place">Nairobi, Kenya</p>
+                        </div>
+                        <div class="job-body">
+                            <h3 class="job-company">Meliora Technologies Limited</h3>
+                            <div class="role">
+                                <h4 class="role-title">Software Engineer</h4>
+                                <p class="stack">Java · AngularJS · PHP · MySQL · SMPP · SOAP</p>
+                                <ul>
+                                    <li>Developed and deployed the Unified Communications Manager product using
+                                        AngularJS and Java.</li>
+                                    <li>Configured Red Hat Linux servers and drew the system architecture.</li>
+                                    <li>Trained KCB technical and customer-experience staff to support the product.</li>
+                                    <li>Built Safaritek, a SaaS solution for the tourism industry, in AngularJS.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="job is-early" hidden>
+                        <div class="job-meta">
+                            <p class="job-date">Feb 2015 — Aug 2016</p>
+                            <p class="job-place">Nairobi, Kenya</p>
+                        </div>
+                        <div class="job-body">
+                            <h3 class="job-company">Olive Tree Media Limited</h3>
+                            <div class="role">
+                                <h4 class="role-title">Backend Software Engineer</h4>
+                                <p class="stack">PHP (Laravel, Yii, CodeIgniter) · MySQL · WordPress</p>
+                                <ul>
+                                    <li>Built the Co-operative Bank of Kenya website from scratch, plus marketing
+                                        and analytics modules and plugins.</li>
+                                    <li>Reinforced backend security with custom protocols — no breach since taking
+                                        over the project.</li>
+                                    <li>Handled SSL certificate issuance and cross-device compatibility checks.</li>
+                                    <li>Handled USSD requests from the AIRTEL partnership.</li>
+                                    <li>Produced solution documents and project timelines; trained content staff and
+                                        clients on in-house products such as Bonga SMS.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="job is-early" hidden>
+                        <div class="job-meta">
+                            <p class="job-date">May 2014 — Sep 2014</p>
+                            <p class="job-place">Mombasa, Kenya</p>
+                        </div>
+                        <div class="job-body">
+                            <h3 class="job-company">Voices of Africa for Sustainable Development</h3>
+                            <div class="role">
+                                <h4 class="role-title">Software Engineer Intern</h4>
+                                <p class="stack">C# · MS SQL Server</p>
+                                <ul>
+                                    <li>Team leader for the developer group in Mombasa.</li>
+                                    <li>Maintained and extended Afya Pro.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="job is-early" hidden>
+                        <div class="job-meta">
+                            <p class="job-date">Sep 2013 — Aug 2014</p>
+                            <p class="job-place">Nairobi, Kenya</p>
+                        </div>
+                        <div class="job-body">
+                            <h3 class="job-company">Microsoft</h3>
+                            <div class="role">
+                                <h4 class="role-title">Microsoft Student Partner</h4>
+                                <p class="stack">C# · UWP</p>
+                                <ul>
+                                    <li>Learned C# and developed Windows Mobile applications.</li>
+                                    <li>Trained fellow campus students on building apps and leveraging the Microsoft
+                                        ecosystem.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="job is-early" hidden>
+                        <div class="job-meta">
+                            <p class="job-date">Nov 2010 — Sep 2011</p>
+                            <p class="job-place">Mombasa, Kenya</p>
+                        </div>
+                        <div class="job-body">
+                            <h3 class="job-company">Tavez Connections Ltd</h3>
+                            <div class="role">
+                                <h4 class="role-title">Web Designer</h4>
+                                <p class="stack">Dreamweaver</p>
+                                <ul>
+                                    <li>Designed the company website and ran its online marketing.</li>
+                                    <li>Facilitated negotiations and the purchase of impact crushers.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                </ol>
+
+                <button class="btn btn-wide" id="more-jobs" type="button" aria-expanded="false">
+                    Show 6 earlier roles
+                </button>
+            </div>
+        </section>
+
+        <!-- ───────────────────────── Open source ───────────────────────── -->
+        <section class="section" id="open-source">
+            <div class="wrap">
+                <p class="section-label">03 <span aria-hidden="true">—</span> Open source</p>
+                <h2 class="section-title">Things I build in the&nbsp;open.</h2>
+
+                <article class="project">
+
+                    <div class="project-head">
+                        <div>
+                            <h3 class="project-name">Table&nbsp;X</h3>
+                            <p class="project-tag">A fast, cross-platform database client for developers.</p>
+                        </div>
+                        <p class="project-status">
+                            <span class="dot-live" aria-hidden="true"></span>
+                            Pre-release · v0.2.0
+                        </p>
+                    </div>
+
+                    <div class="project-body">
+                        <div class="project-copy">
+                            <p>
+                                Table X is an open-source SQL client for people who live in a query editor
+                                all day: a schema browser that survives large catalogs, an editable
+                                virtualised result grid, and a CodeMirror editor that knows your schema —
+                                on <strong>Windows, Linux, macOS, iOS and Android</strong> from one codebase.
+                            </p>
+                            <p>
+                                The connection handling, wire-protocol decoding and streaming exports run in
+                                Rust; the editor and grid run in the webview, where the web platform is
+                                genuinely the best tool. The first design goal is
+                                <em>correctness over convenience</em> — a client that silently rounds a
+                                monetary value or updates more rows than you edited is worse than no client
+                                at all.
+                            </p>
+
+                            <ul class="project-points">
+                                <li>
+                                    <strong>Five drivers.</strong>
+                                    SQLite, PostgreSQL, MySQL/MariaDB, SQL Server and ClickHouse — each with
+                                    exact <code>NUMERIC</code>/<code>DECIMAL</code> decoding rather than floats.
+                                </li>
+                                <li>
+                                    <strong>Power features.</strong>
+                                    SSH tunnels with multi-hop chains, visual <code>EXPLAIN</code>, ER
+                                    diagrams, schema diff with generated migration DDL, notebooks, and
+                                    result charts drawn in hand-written SVG.
+                                </li>
+                                <li>
+                                    <strong>Beyond the window.</strong>
+                                    A <code>tablex</code> CLI sharing the same drivers — with
+                                    <code>diff --exit-code</code> as a CI schema-drift gate — plus an MCP
+                                    server so an agent can query read-only with row caps and a full audit trail.
+                                </li>
+                                <li>
+                                    <strong>Honest affordances.</strong>
+                                    The UI hides what a given database cannot do instead of offering buttons
+                                    that fail, and tells you which of four reasons made a result read-only.
+                                </li>
+                            </ul>
+
+                            <div class="project-cta">
+                                <a class="btn btn-primary" href="https://github.com/PhillipMwaniki/table-x" rel="noopener"
+                                    target="_blank">
+                                    View on GitHub <span aria-hidden="true">↗</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <aside class="project-side">
+                            <dl class="project-facts">
+                                <div>
+                                    <dt>Stack</dt>
+                                    <dd>Rust · Tauri 2 · React 19 · TypeScript · CodeMirror 6</dd>
+                                </div>
+                                <div>
+                                    <dt>Platforms</dt>
+                                    <dd>Windows · Linux · macOS · iOS · Android</dd>
+                                </div>
+                                <div>
+                                    <dt>Licence</dt>
+                                    <dd>MIT <span class="or">OR</span> Apache-2.0</dd>
+                                </div>
+                                <div>
+                                    <dt>Installer</dt>
+                                    <dd>~10&nbsp;MB <span class="muted">(vs ~150&nbsp;MB Electron)</span></dd>
+                                </div>
+                            </dl>
+
+                            <p class="project-note">
+                                Milestone 1 is feature-complete and tested against real engines. Desktop
+                                installers are produced by CI but are not code-signed yet, so treat it as
+                                pre-release.
+                            </p>
+                        </aside>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ──────────────────────────── Skills ──────────────────────────── -->
+        <section class="section section-alt" id="skills">
+            <div class="wrap">
+                <p class="section-label">04 <span aria-hidden="true">—</span> Skills</p>
+                <h2 class="section-title">What I work with.</h2>
+
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <h3>Backend</h3>
+                        <ul class="chips">
+                            <li>PHP</li>
+                            <li class="is-key">Laravel</li>
+                            <li>Rust</li>
+                            <li>Zend Framework</li>
+                            <li>Yii</li>
+                            <li>CodeIgniter</li>
+                            <li>Node.js</li>
+                            <li>Elixir</li>
+                            <li>Spring Boot</li>
+                            <li>C#</li>
+                            <li>C++</li>
+                            <li class="is-key">REST APIs</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>Frontend</h3>
+                        <ul class="chips">
+                            <li class="is-key">Vue 3</li>
+                            <li>React</li>
+                            <li>TypeScript</li>
+                            <li>JavaScript</li>
+                            <li>Angular</li>
+                            <li>AngularJS</li>
+                            <li>Vite</li>
+                            <li>Tailwind</li>
+                            <li>WordPress</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>Mobile &amp; desktop</h3>
+                        <ul class="chips">
+                            <li class="is-key">Android (Java)</li>
+                            <li>Flutter</li>
+                            <li>Tauri</li>
+                            <li>UWP</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>Data</h3>
+                        <ul class="chips">
+                            <li class="is-key">MySQL</li>
+                            <li>PostgreSQL</li>
+                            <li>SQLite</li>
+                            <li>Redis</li>
+                            <li>MS SQL Server</li>
+                            <li>ClickHouse</li>
+                            <li>FileMaker</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>Infrastructure &amp; practice</h3>
+                        <ul class="chips">
+                            <li class="is-key">System architecture</li>
+                            <li>CI/CD</li>
+                            <li>Git</li>
+                            <li>GitLab</li>
+                            <li>Bitbucket</li>
+                            <li>Linux (CentOS / RHEL)</li>
+                            <li>Unit &amp; feature testing</li>
+                            <li>Playwright</li>
+                            <li>SMPP</li>
+                            <li>SOAP</li>
+                            <li>SSL</li>
+                        </ul>
+                    </article>
+
+                    <article class="skill-card">
+                        <h3>Leadership</h3>
+                        <ul class="chips">
+                            <li class="is-key">Engineering management</li>
+                            <li class="is-key">Executive-level management</li>
+                            <li>Product management</li>
+                            <li>Team leadership</li>
+                            <li>Technical training</li>
+                            <li>Client consulting</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ───────────────────── Education & certifications ───────────────────── -->
+        <section class="section" id="education">
+            <div class="wrap">
+                <p class="section-label">05 <span aria-hidden="true">—</span> Education</p>
+                <h2 class="section-title">Where it started.</h2>
+
+                <div class="edu-grid">
+                    <div>
+                        <ul class="edu-list">
+                            <li>
+                                <p class="edu-date">2011 — 2015</p>
+                                <h3>Kenyatta University</h3>
+                                <p class="edu-detail">BSc, Software Engineering</p>
+                            </li>
+                            <li>
+                                <p class="edu-date">2013</p>
+                                <h3>eMobilis Mobile Training Academy</h3>
+                                <p class="edu-detail">
+                                    Certificate in Mobile Innovation and Telecommunication —
+                                    Advanced MIT/Nokia Mobile Technology Entrepreneurship
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="minor-heading">Certifications</h3>
+                        <ul class="cert-list">
+                            <li>Mobile Innovation and Technology</li>
+                            <li>Building an Android App with Architecture Components</li>
+                            <li>FileMaker: Relational Database Design</li>
+                            <li>Learning FileMaker</li>
+                            <li>Digital Body Language</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─────────────────────────── Contact ─────────────────────────── -->
+        <section class="section section-contact" id="contact">
+            <div class="wrap">
+                <p class="section-label">06 <span aria-hidden="true">—</span> Contact</p>
+                <h2 class="section-title contact-title">
+                    Got a system that needs&nbsp;untangling?
+                </h2>
+                <p class="contact-lede">
+                    I take on consulting, systems integration and architecture work.
+                    The fastest way to reach me is email.
+                </p>
+
+                <div class="contact-grid">
+                    <a class="contact-card" href="mailto:mwanikiphillip@gmail.com">
+                        <span class="contact-key">Email</span>
+                        <span class="contact-val">mwanikiphillip@gmail.com</span>
+                    </a>
+                    <a class="contact-card" href="tel:+254725095439">
+                        <span class="contact-key">Phone</span>
+                        <span class="contact-val">+254 725 095 439</span>
+                    </a>
+                    <a class="contact-card" href="https://www.linkedin.com/in/pmwaniki" rel="me noopener"
+                        target="_blank">
+                        <span class="contact-key">LinkedIn</span>
+                        <span class="contact-val">in/pmwaniki</span>
+                    </a>
+                    <div class="contact-card is-static">
+                        <span class="contact-key">Post</span>
+                        <span class="contact-val">P.O. Box 479-80109, Mtwapa</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <p class="footer-name">Phillip Mwaniki <span aria-hidden="true">—</span> Nairobi, Kenya</p>
+            <ul class="footer-links">
+                <li><a href="https://www.linkedin.com/in/pmwaniki" rel="me noopener" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/PhillipMwaniki" rel="me noopener" target="_blank">GitHub</a></li>
+                <li><a href="https://x.com/phillipmwaniki" rel="me noopener" target="_blank">X</a></li>
+                <li><a href="mailto:mwanikiphillip@gmail.com">Email</a></li>
+            </ul>
+            <p class="footer-meta">Built by hand. <a href="#top">Back to top ↑</a></p>
+        </div>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Phillip Mwaniki",
+        "jobTitle": "Head of Engineering",
+        "description": "IT Consultant, Systems Integrator and Software Engineer focused on the backend using PHP (Laravel).",
+        "image": "https://phillipmwaniki.github.io/img/profile.jpg",
+        "email": "mailto:mwanikiphillip@gmail.com",
+        "telephone": "+254725095439",
+        "url": "https://phillipmwaniki.github.io/",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Nairobi",
+            "addressCountry": "KE"
+        },
+        "worksFor": { "@type": "Organization", "name": "Wonderkid Multimedia" },
+        "alumniOf": [
+            { "@type": "CollegeOrUniversity", "name": "Kenyatta University" },
+            { "@type": "EducationalOrganization", "name": "eMobilis Mobile Training Academy" }
+        ],
+        "knowsAbout": ["PHP", "Laravel", "Rust", "System Architecture", "REST APIs", "MySQL", "Vue.js", "Engineering Management"],
+        "sameAs": [
+            "https://www.linkedin.com/in/pmwaniki",
+            "https://github.com/PhillipMwaniki",
+            "https://x.com/phillipmwaniki"
+        ]
+    }
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+
 </html>
