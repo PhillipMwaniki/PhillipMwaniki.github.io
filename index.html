@@ -32,7 +32,9 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- ?v= busts caches held over from the previous template, which used these same
+         two paths. Bump on every deploy that changes css/style.css or js/main.js. -->
+    <link rel="stylesheet" href="css/style.css?v=2">
 
     <script>
         // Applied before first paint so the chosen theme never flashes.
@@ -849,7 +851,7 @@
     }
     </script>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=2"></script>
 </body>
 
 </html>
